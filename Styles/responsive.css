@@ -1,50 +1,112 @@
 @media screen and (max-width: 576px) {
     .nav-drop-down {
-        display: block;
-        /* show the menu when the screen is small */
-    }
-
-    .nav-drop-down h2 {
-        font-size: 1.2em;
-        /* reduce the font size of the heading */
-    }
-
-    .nav-drop-down ul {
-        margin: 0;
-        /* remove the default margin on the list */
-        padding: 0;
-        /* remove the default padding on the list */
-        list-style: none;
-        /* remove the default bullet points */
-    }
-
-    .nav-drop-down li {
-        margin: 0.5em 0;
-        /* add some spacing between the list items */
-    }
-
-
-
-    .nav-main {
         flex-direction: column;
         text-align: center;
     }
 
+    .nav-drop-down h2 {
+        margin-bottom: 30px;
+    }
+
+    .nav-drop-down ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin-top: 1px;
+        margin-left: 5px;
+        margin-bottom: 40px;
+    }
+
     .nav-main h1 {
-        font-size: 2rem;
+        margin: 0;
     }
 
     .nav-main p {
-        font-size: 1rem;
+        margin: 0;
     }
 
     .nav-main img {
         width: 100%;
     }
 
-    .primary-btn {
-        font-size: 1rem;
-        padding: 0.8rem 1.6rem;
+    .grid {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 40px;
+        margin: 85px 40px;
     }
 
+    .img {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 60px;
+    }
+
+    .text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .tricky {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .tricky-texts {
+        padding-top: 20px;
+    }
+
+    .picture-button {
+        width: 100%;
+    }
+
+    .picture-button img {
+        width: 500px;
+        height: 780px;
+    }
+
+    .secondary-btn {
+        padding: 40px 40px;
+    }
+
+    .btn-big-text {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .btn-small-text {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .facts {
+        margin: 40px 40px;
+    }
+
+    .facts h1,
+    .facts p {
+        text-align: center;
+    }
+
+    .little-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding-top: 25px;
+    }
+
+    .sponsor {
+        text-align: center;
+        margin: 50px 0;
+    }
+
+    #sponsor-logo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    footer {
+        margin: 0 10px;
+        margin-bottom: 50px;
+    }
 }
